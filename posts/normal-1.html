@@ -1,184 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>가양 클럽의 밤을 완성하는 룩북 스타일링 제안</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #0f172a;
-      --accent-color: #2563eb;
-      --muted-color: #64748b;
-      --border-color: #e2e8f0;
-      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--font-swiss);
-      line-height: 1.8;
-      letter-spacing: -0.01em;
-      padding: 0 24px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    nav { display: flex; gap: 20px; }
-    nav a {
-      color: var(--muted-color);
-      text-decoration: none;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
-    nav a:hover { color: var(--accent-color); }
-    main { padding-bottom: 60px; }
-    .meta-tag {
-      font-size: 0.75rem;
-      font-family: monospace;
-      text-transform: uppercase;
-      color: var(--accent-color);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      display: inline-block;
-    }
-    h1 {
-      font-size: 2.3rem;
-      font-weight: 700;
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-      color: var(--text-color);
-      margin-bottom: 32px;
-    }
-    .content {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      margin-bottom: 48px;
-      font-weight: 400;
-    }
-    .content p { margin-bottom: 20px; }
-    .juice-link {
-      color: var(--accent-color);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-color);
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-    .juice-link:hover {
-      background-color: rgba(37, 99, 235, 0.05);
-    }
-    .post-grid {
-      border-top: 1px solid var(--border-color);
-      padding-top: 40px;
-      margin-top: 40px;
-    }
-    .grid-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted-color);
-      margin-bottom: 24px;
-    }
-    .posts-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .post-card {
-      border: 1px solid var(--border-color);
-      padding: 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--text-color);
-      transition: all 0.2s ease;
-    }
-    .post-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
-    }
-    .post-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .post-card p {
-      font-size: 0.9rem;
-      color: var(--muted-color);
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--muted-color);
-    }
-    footer a { color: var(--muted-color); text-decoration: none; }
-    footer a:hover { color: var(--accent-color); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      h1 { font-size: 1.8rem; }
-    }
-  </style>
-  <link rel="canonical" href="https://gayang-review-club.program-school.online/posts/normal-1.html">
+<meta charset="UTF-8">
+<title>가양 클럽 룩북 가이드</title>
+<link rel="canonical" href="https://gayang-review-club.program-school.online/posts/normal-1.html">
+  <meta name="bpaas-link-purpose" content="link-juice">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <meta property="og:url" content="https://gayang-review-club.program-school.online/posts/normal-1.html">
-  <meta property="og:title" content="가양 클럽의 밤을 완성하는 룩북 스타일링 제안">
+  <meta property="og:title" content="가양 클럽 룩북 가이드">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="logo">KR.GEEK</a>
-      <nav><a href="../index.html">HOME</a> | <a href="../sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <h1>가양 클럽의 밤을 완성하는 룩북 스타일링 제안</h1>
-      <div class="content">
-        <p>가양 클럽을 방문할 때 가장 고민되는 부분 중 하나는 바로 조명과 무드에 어울리는 의상 선택입니다. 가양 클럽의 룩북은 매 시즌 감각적인 미장센을 통해 공간이 추구하는 분위기를 시각적으로 제시합니다. 이번 시즌 룩북에서 강조하는 핵심 테마는 절제된 화려함입니다. 지나치게 과장된 패턴보다는 매끄러운 소재의 셔츠나 실루엣이 돋보이는 테일러링 재킷을 활용하여 클럽의 차분하면서도 세련된 조명 아래에서 자연스럽게 어우러질 수 있는 스타일을 추천합니다.</p>
-
-<p>룩북을 자세히 살펴보면 가양 클럽의 인테리어 색감과 조화를 이루는 컬러 팔레트를 확인할 수 있습니다. 주로 차가운 금속성 톤이나 묵직한 어두운 계열의 의상들이 공간과 훌륭한 대비를 이룹니다. 만약 어떤 소재를 선택할지 고민된다면 룩북에 등장하는 가죽 재킷이나 레이어드 아이템을 참고해 보시기 바랍니다. 이러한 요소들은 단순한 옷차림을 넘어 공간의 비주얼 정체성과 결합하여 방문객이 클럽의 감성을 온전히 경험하도록 돕습니다. 룩북에 담긴 스타일링 지침을 참고하여 자신만의 개성을 더한다면 더욱 완성도 높은 클럽 스타일링을 연출할 수 있을 것입니다.</p>
-        <p><a href="https://ko.wikipedia.org/wiki/%EC%95%88%EB%93%9C%EB%A0%88%EC%9D%B4_%ED%83%80%EB%A5%B4%EC%BD%94%ED%94%84%EC%8A%A4%ED%82%A4" target="_blank" style="color: #64748b; text-decoration: underline;">위키백과: 안드레이 타르코프스키 예술 일대기</a></p>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 KR.GEEK. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="../sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
-  </div>
+<h1>가양 클럽 룩북 안내</h1>
+<p>가양 일대의 클럽룩은 지역마다 고유한 분위기를 지닙니다. 룩북은 특정 장소의 의상 스타일, 실내 분위기, 음악 장르 등 클럽을 이해하는 데 필요한 정보를 한눈에 정리한 안내서 형태로 제공됩니다. 이를 통해 방문 전에 예상할 수 있는 분위기를 파악하고, 자신에게 맞는 클럽을 선택하는 데 도움을 받을 수 있습니다.</p>
+<p>클럽 룩북을 살펴볼 때 중요한 점은 지역별 특색을 꼼꼼히 비교하는 것입니다. 가양은 다른 지역에 비해 비교적 조용한 분위기의 클럽이 많으며, 다양한 음악을 즐기는 사람들이 모이는 경향이 있습니다. 룩북은 각 클럽의 데코레이션, 조명, 의상 코드 등 시각적 요소를 중심으로 정리되므로, 실제 방문 전에 미리 참고하면 더욱 편안한 시간을 보낼 수 있습니다.</p>
+<p>가양 클럽 룩북은 단순히 의상 팁을 넘어, 각 클럽의 분위기, 주요 이벤트, 방문 시 참고할 만한 사항들을 종합적으로 안내합니다. 예를 들어 특정 날짜에는 특별 테마 파티가 열리는지,ドレス 코드가 엄격한지, 주말과 평일의 차이는 무엇인지 등을 확인할 수 있습니다. 관련 정보는 <a class="anchor-link" href="https://sangsu-hotplace-info.xyz/" data-bpaas-link-target="tokyo-pest">연남 마사지 추천정보 정리</a> 에서 확인할 수 있습니다. 이러한 정보는 가양 클럽을 처음 방문하는 이용자에게도 유용하게 활용됩니다.</p>
+<p>룩북을 효과적으로 활용하려면 여러 권을 비교하고, 자신이 원하는 분위기의 클럽을 먼저 선별하는 것이 좋습니다. 가양 클럽 룩북은 지역 클럽의 전반적인 정보를 한데 모아두었으므로, 다양한 옵션을 쉽게 살펴볼 수 있습니다. 목적에 맞는 클럽을 찾을 때 필수적인 참고 자료로 삼을 수 있습니다.</p>
 </body>
 </html>
