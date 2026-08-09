@@ -1,223 +1,221 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>가양 클럽 룩북 | 에디토리얼 블로그 — 드레스 코드의 해부</title>
-    <meta name="description" content="가양 클럽 룩북 에디토리얼 블로그: 서울 가양동 프리미엄 클럽의 드레스 코드 원칙, 시즌별 아이템 데이터, 스타일링 전략을 아카이브한 권위 있는 분석. 2025년 S/S 룩북 업데이트 기반.">
-    <meta name="keywords" content="가양 클럽, 가양 클럽 룩북, 가양 클럽 드레스 코드, 클럽 스타일, 에디토리얼 룩북, 가양 클럽 추천, 가양 클럽 룩, 블로그">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-ivory-ink">
-    <link rel="canonical" href="https://gayang-review-club.program-school.online/blog.html">
-    <meta property="og:title" content="가양 클럽 룩북 | 에디토리얼 블로그 — 드레스 코드의 해부">
-    <meta property="og:description" content="가양 클럽 룩북 에디토리얼 블로그: 서울 가양동 프리미엄 클럽의 드레스 코드 원칙, 시즌별 아이템 데이터, 스타일링 전략을 아카이브한 권위 있는 분석. 2025년 S/S 룩북 업데이트 기반.">
-    <style>
-        /* Reset & Base */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            background-color: #fcfaf7;
-            color: #1e1b18;
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-        }
-        /* Typography */
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 400;
-            letter-spacing: -0.02em;
-            color: #1a1614;
-        }
-        h1 {
-            font-size: 3.2rem;
-            line-height: 1.1;
-            margin-bottom: 1.2rem;
-            border-bottom: 1px solid #d6cec4;
-            padding-bottom: 0.4rem;
-        }
-        h2 {
-            font-size: 2.2rem;
-            line-height: 1.2;
-            margin: 2.4rem 0 1.2rem 0;
-        }
-        h3 {
-            font-size: 1.5rem;
-            line-height: 1.3;
-            margin: 1.8rem 0 0.8rem 0;
-        }
-        p {
-            margin-bottom: 1.4rem;
-            font-size: 1.0625rem;
-            color: #2a2520;
-        }
-        a {
-            color: #3b322b;
-            text-decoration: none;
-            border-bottom: 1px solid #c6beb4;
-            transition: border-color 0.15s ease;
-        }
-        a:hover {
-            border-bottom-color: #1a1614;
-        }
-        /* Drop Cap */
-        .drop-cap::first-letter {
-            float: left;
-            font-size: 4.2rem;
-            line-height: 0.8;
-            padding-right: 0.4rem;
-            font-weight: 400;
-            color: #4a3f38;
-            margin-top: 0.1rem;
-        }
-        /* Container */
-        .container {
-            max-width: 1080px;
-            margin: 0 auto;
-            padding: 2.4rem 2rem;
-        }
-        /* Header & Navigation */
-        .site-header {
-            padding: 1.2rem 2rem;
-            border-bottom: 1px solid #e2dbd2;
-            background-color: #fcfaf7;
-        }
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1080px;
-            margin: 0 auto;
-        }
-        .logo a {
-            font-size: 1.4rem;
-            letter-spacing: -0.02em;
-            font-weight: 400;
-            border-bottom: none;
-            color: #1a1614;
-        }
-        .logo a:hover {
-            opacity: 0.7;
-        }
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-        .nav-links a {
-            font-size: 0.95rem;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            border-bottom: none;
-            color: #3b322b;
-        }
-        .nav-links a:hover {
-            color: #1a1614;
-            border-bottom: 1px solid #1a1614;
-        }
-        /* hamburger-menu (pattern) */
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            gap: 4px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 6px;
-        }
-        .hamburger-menu span {
-            display: block;
-            width: 26px;
-            height: 2px;
-            background-color: #1e1b18;
-            border-radius: 2px;
-        }
-        /* responsive-768 */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                gap: 1rem;
-                background-color: #fcfaf7;
-                position: absolute;
-                top: 70px;
-                right: 2rem;
-                padding: 1.4rem 2rem;
-                border: 1px solid #d6cec4;
-                z-index: 10;
-            }
-            .nav-links.active {
-                display: flex;
-            }
-            .hamburger-menu {
-                display: flex;
-            }
-            .container {
-                padding: 1.8rem 1.2rem;
-            }
-            h1 {
-                font-size: 2.4rem;
-            }
-            h2 {
-                font-size: 1.8rem;
-            }
-        }
-        /* article specific */
-        .article-meta {
-            font-size: 0.9rem;
-            color: #6b5e53;
-            margin-bottom: 2rem;
-            letter-spacing: 0.02em;
-            border-bottom: 1px solid #e2dbd2;
-            padding-bottom: 0.8rem;
-        }
-        .article-body {
-            max-width: 780px;
-        }
-        .pullquote {
-            font-size: 1.6rem;
-            line-height: 1.3;
-            color: #4a3f38;
-            border-left: 3px solid #b0a59a;
-            padding-left: 1.6rem;
-            margin: 2rem 0 2rem 2rem;
-            font-style: italic;
-        }
-        .stat-block {
-            background: #f2ede8;
-            padding: 1.2rem 1.8rem;
-            margin: 1.6rem 0;
-            border-left: 4px solid #8a7b6e;
-        }
-        .stat-block p {
-            margin-bottom: 0.3rem;
-            font-size: 0.95rem;
-        }
-        .stat-block strong {
-            font-weight: 600;
-            color: #1a1614;
-        }
-        .footer-note {
-            margin-top: 3.6rem;
-            padding-top: 1.4rem;
-            border-top: 1px solid #d6cec4;
-            font-size: 0.9rem;
-            color: #5b4e44;
-        }
-        @media (max-width: 480px) {
-            .pullquote {
-                margin-left: 0.8rem;
-                padding-left: 1rem;
-                font-size: 1.3rem;
-            }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>가양 클럽 룩북 | 에디토리얼 블로그 — 드레스 코드의 해부</title>
+ <meta name="description" content="가양 클럽 룩북 에디토리얼 블로그: 서울 가양동 프리미엄 클럽의 드레스 코드 원칙, 시즌별 아이템 데이터, 스타일링 전략을 아카이브한 권위 있는 분석. 2025년 S/S 룩북 업데이트 기반.">
+ <meta name="keywords" content="가양 클럽, 가양 클럽 룩북, 가양 클럽 드레스 코드, 클럽 스타일, 에디토리얼 룩북, 가양 클럽 추천, 가양 클럽 룩, 블로그">
+ <link rel="canonical" href="https://gayang-review-club.program-school.online/blog.html">
+ <meta property="og:title" content="가양 클럽 룩북 | 에디토리얼 블로그 — 드레스 코드의 해부">
+ <meta property="og:description" content="가양 클럽 룩북 에디토리얼 블로그: 서울 가양동 프리미엄 클럽의 드레스 코드 원칙, 시즌별 아이템 데이터, 스타일링 전략을 아카이브한 권위 있는 분석. 2025년 S/S 룩북 업데이트 기반.">
+ <style>
+ /* Reset & Base */
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: 'Georgia', 'Times New Roman', serif;
+ background-color: #fcfaf7;
+ color: #1e1b18;
+ line-height: 1.7;
+ -webkit-font-smoothing: antialiased;
+ }
+ /* Typography */
+ h1, h2, h3, h4, h5, h6 {
+ font-weight: 400;
+ letter-spacing: -0.02em;
+ color: #1a1614;
+ }
+ h1 {
+ font-size: 3.2rem;
+ line-height: 1.1;
+ margin-bottom: 1.2rem;
+ border-bottom: 1px solid #d6cec4;
+ padding-bottom: 0.4rem;
+ }
+ h2 {
+ font-size: 2.2rem;
+ line-height: 1.2;
+ margin: 2.4rem 0 1.2rem 0;
+ }
+ h3 {
+ font-size: 1.5rem;
+ line-height: 1.3;
+ margin: 1.8rem 0 0.8rem 0;
+ }
+ p {
+ margin-bottom: 1.4rem;
+ font-size: 1.0625rem;
+ color: #2a2520;
+ }
+ a {
+ color: #3b322b;
+ text-decoration: none;
+ border-bottom: 1px solid #c6beb4;
+ transition: border-color 0.15s ease;
+ }
+ a:hover {
+ border-bottom-color: #1a1614;
+ }
+ /* Drop Cap */
+ .drop-cap::first-letter {
+ float: left;
+ font-size: 4.2rem;
+ line-height: 0.8;
+ padding-right: 0.4rem;
+ font-weight: 400;
+ color: #4a3f38;
+ margin-top: 0.1rem;
+ }
+ /* Container */
+ .container {
+ max-width: 1080px;
+ margin: 0 auto;
+ padding: 2.4rem 2rem;
+ }
+ /* Header & Navigation */
+ .site-header {
+ padding: 1.2rem 2rem;
+ border-bottom: 1px solid #e2dbd2;
+ background-color: #fcfaf7;
+ }
+ .nav-container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ max-width: 1080px;
+ margin: 0 auto;
+ }
+ .logo a {
+ font-size: 1.4rem;
+ letter-spacing: -0.02em;
+ font-weight: 400;
+ border-bottom: none;
+ color: #1a1614;
+ }
+ .logo a:hover {
+ opacity: 0.7;
+ }
+ .nav-links {
+ display: flex;
+ gap: 2rem;
+ list-style: none;
+ }
+ .nav-links a {
+ font-size: 0.95rem;
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+ border-bottom: none;
+ color: #3b322b;
+ }
+ .nav-links a:hover {
+ color: #1a1614;
+ border-bottom: 1px solid #1a1614;
+ }
+ /* hamburger-menu (pattern) */
+ .hamburger-menu {
+ display: none;
+ flex-direction: column;
+ gap: 4px;
+ background: none;
+ border: none;
+ cursor: pointer;
+ padding: 6px;
+ }
+ .hamburger-menu span {
+ display: block;
+ width: 26px;
+ height: 2px;
+ background-color: #1e1b18;
+ border-radius: 2px;
+ }
+ /* responsive-768 */
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ gap: 1rem;
+ background-color: #fcfaf7;
+ position: absolute;
+ top: 70px;
+ right: 2rem;
+ padding: 1.4rem 2rem;
+ border: 1px solid #d6cec4;
+ z-index: 10;
+ }
+ .nav-links.active {
+ display: flex;
+ }
+ .hamburger-menu {
+ display: flex;
+ }
+ .container {
+ padding: 1.8rem 1.2rem;
+ }
+ h1 {
+ font-size: 2.4rem;
+ }
+ h2 {
+ font-size: 1.8rem;
+ }
+ }
+ /* article specific */
+ .article-meta {
+ font-size: 0.9rem;
+ color: #6b5e53;
+ margin-bottom: 2rem;
+ letter-spacing: 0.02em;
+ border-bottom: 1px solid #e2dbd2;
+ padding-bottom: 0.8rem;
+ }
+ .article-body {
+ max-width: 780px;
+ }
+ .pullquote {
+ font-size: 1.6rem;
+ line-height: 1.3;
+ color: #4a3f38;
+ border-left: 3px solid #b0a59a;
+ padding-left: 1.6rem;
+ margin: 2rem 0 2rem 2rem;
+ font-style: italic;
+ }
+ .stat-block {
+ background: #f2ede8;
+ padding: 1.2rem 1.8rem;
+ margin: 1.6rem 0;
+ border-left: 4px solid #8a7b6e;
+ }
+ .stat-block p {
+ margin-bottom: 0.3rem;
+ font-size: 0.95rem;
+ }
+ .stat-block strong {
+ font-weight: 600;
+ color: #1a1614;
+ }
+ .footer-note {
+ margin-top: 3.6rem;
+ padding-top: 1.4rem;
+ border-top: 1px solid #d6cec4;
+ font-size: 0.9rem;
+ color: #5b4e44;
+ }
+ @media (max-width: 480px) {
+ .pullquote {
+ margin-left: 0.8rem;
+ padding-left: 1rem;
+ font-size: 1.3rem;
+ }
+ }
+ </style>
   <meta property="og:url" content="https://gayang-review-club.program-school.online/blog.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
@@ -225,69 +223,69 @@
 <body>
 
 <header class="site-header">
-    <div class="nav-container">
-        <div class="logo"><a href="/">가양 클럽 룩북</a></div>
-        <button class="hamburger-menu" aria-label="메뉴 열기" onclick="this.nextElementSibling.classList.toggle('active')">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links">
-            <li><a href="/">룩북</a></li>
-            <li><a href="/blog">블로그</a></li>
-            <li><a href="/lookbook">시즌별</a></li>
-            <li><a href="/about">에디토리얼</a></li>
-        </ul>
-    </div>
+ <div class="nav-container">
+ <div class="logo"><a href="/">가양 클럽 룩북</a></div>
+ <button class="hamburger-menu" aria-label="메뉴 열기" onclick="this.nextElementSibling.classList.toggle('active')">
+ <span></span><span></span><span></span>
+ </button>
+ <ul class="nav-links">
+ <li><a href="/">룩북</a></li>
+ <li><a href="/blog">블로그</a></li>
+ <li><a href="/lookbook">시즌별</a></li>
+ <li><a href="/about">에디토리얼</a></li>
+ </ul>
+ </div>
 </header>
 
 <main class="container">
-    <article class="article-body">
-        <h1>드레스 코드의 해부: 가양 클럽 룩북 2025 S/S</h1>
-        <div class="article-meta">
-            <span>에디토리얼 팀 · 2025년 3월 17일 · 7분 읽기</span>
-        </div>
+ <article class="article-body">
+ <h1>드레스 코드의 해부: 가양 클럽 룩북 2025 S/S</h1>
+ <div class="article-meta">
+ <span>에디토리얼 팀 · 2025년 3월 17일 · 7분 읽기</span>
+ </div>
 
-        <p class="drop-cap">가양동 프리미엄 클럽의 드레스 코드는 단순한 복장 규정이 아니다. 그것은 도시의 야간 문화와 개인의 정체성이 교차하는 지점이다. 2025년 S/S 시즌, 우리는 3개월간의 현장 리서치와 120명의 게스트 데이터를 기반으로 가양 클럽 룩북의 핵심 원칙을 해부한다. 이 블로그는 단순한 스타일링 팁이 아니라, 권위 있는 에디토리얼 아카이브로서의 기록이다.</p>
+ <p class="drop-cap">가양동 프리미엄 클럽의 드레스 코드는 단순한 복장 규정이 아니다. 그것은 도시의 야간 문화와 개인의 정체성이 교차하는 지점이다. 2025년 S/S 시즌, 우리는 3개월간의 현장 리서치와 120명의 게스트 데이터를 기반으로 가양 클럽 룩북의 핵심 원칙을 해부한다. 이 블로그는 단순한 스타일링 팁이 아니라, 권위 있는 에디토리얼 아카이브로서의 기록이다.</p>
 
-        <h2>데이터로 본 드레스 코드: 2025 S/S 트렌드</h2>
-        <p>가양 클럽 게스트의 복장 선택을 분석한 결과, 2025년 봄/여름 시즌에는 세 가지 지배적인 방향성이 확인되었다. 첫째, <strong>미니멀 테일러링</strong> — 정장 재킷을 해체한 싱글 버튼 블레이저와 와이드 팬츠의 조합이 전체 게스트의 38%를 차지했다. 둘째, <strong>하이브리드 럭셔리</strong> — 스포츠웨어 소재에 프리미엄 텍스처(실크, 캐시미어 블렌드)를 결합한 아이템이 27%의 점유율을 보였다. 셋째, <strong>다크 로맨틱</strong> — 블랙과 차콜 기반의 레이어드 룩이 22%로 집계되었다.</p>
+ <h2>데이터로 본 드레스 코드: 2025 S/S 트렌드</h2>
+ <p>가양 클럽 게스트의 복장 선택을 분석한 결과, 2025년 봄/여름 시즌에는 세 가지 지배적인 방향성이 확인되었다. 첫째, <strong>미니멀 테일러링</strong> — 정장 재킷을 해체한 싱글 버튼 블레이저와 와이드 팬츠의 조합이 전체 게스트의 38%를 차지했다. 둘째, <strong>하이브리드 럭셔리</strong> — 스포츠웨어 소재에 프리미엄 텍스처(실크, 캐시미어 블렌드)를 결합한 아이템이 27%의 점유율을 보였다. 셋째, <strong>다크 로맨틱</strong> — 블랙과 차콜 기반의 레이어드 룩이 22%로 집계되었다.</p>
 
-        <div class="stat-block">
-            <p><strong>리서치 노트:</strong> 2025년 1월~3월, 가양동 3개 클럽 (룸, 살롱, 베뉴) 출입 게스트 120명 대상. 드레스 코드 준수율 94.2%.</p>
-            <p><strong>키 아이템:</strong> 블랙 더블 브레스티드 블레이저 (18%), 크림 실크 셔츠 (15%), 솔리드 미니멀 드레스 (12%), 로우탑 스니커즈 (9%).</p>
-        </div>
+ <div class="stat-block">
+ <p><strong>리서치 노트:</strong> 2025년 1월~3월, 가양동 3개 클럽 (룸, 살롱, 베뉴) 출입 게스트 120명 대상. 드레스 코드 준수율 94.2%.</p>
+ <p><strong>키 아이템:</strong> 블랙 더블 브레스티드 블레이저 (18%), 크림 실크 셔츠 (15%), 솔리드 미니멀 드레스 (12%), 로우탑 스니커즈 (9%).</p>
+ </div>
 
-        <h2>시즌별 아이템: 가양 클럽 룩북 아카이브</h2>
-        <p>룩북 아카이브는 단순한 아이템 목록이 아니다. 각 시즌의 문화적 맥락과 클럽의 정체성을 반영한다. 2025 S/S 컬렉션의 핵심은 ‘구조적인 유연성’이다. 예를 들어, 오버사이즈 린넨 블레이저는 어깨 라인을 강조하면서도 통기성을 확보했으며, 210gsm의 중량감 있는 실크 저지 탑은 드레이프가 살아 움직임에 따라 실루엣이 변화한다.</p>
+ <h2>시즌별 아이템: 가양 클럽 룩북 아카이브</h2>
+ <p>룩북 아카이브는 단순한 아이템 목록이 아니다. 각 시즌의 문화적 맥락과 클럽의 정체성을 반영한다. 2025 S/S 컬렉션의 핵심은 ‘구조적인 유연성’이다. 예를 들어, 오버사이즈 린넨 블레이저는 어깨 라인을 강조하면서도 통기성을 확보했으며, 210gsm의 중량감 있는 실크 저지 탑은 드레이프가 살아 움직임에 따라 실루엣이 변화한다.</p>
 
-        <div class="pullquote">
-            “가양 클럽의 드레스 코드는 ‘선별된 자유’다. 규칙은 존재하지만, 그 안에서의 창의성이 진정한 스타일을 증명한다.”
-        </div>
+ <div class="pullquote">
+ “가양 클럽의 드레스 코드는 ‘선별된 자유’다. 규칙은 존재하지만, 그 안에서의 창의성이 진정한 스타일을 증명한다.”
+ </div>
 
-        <p>또한, 풋웨어에서는 로퍼와 첼시 부츠가 여전히 강세를 보였으나, 화이트 레더 스니커즈가 새로운 얼터너티브로 등장했다. 2024 F/W 시즌 대비 스니커즈 비율이 11% 증가한 것은 클럽 드레스 코드의 경계가 확장되고 있음을 시사한다. 그러나 플립플롭, 샌들, 작업화는 여전히 제한 리스트에 포함된다.</p>
+ <p>또한, 풋웨어에서는 로퍼와 첼시 부츠가 여전히 강세를 보였으나, 화이트 레더 스니커즈가 새로운 얼터너티브로 등장했다. 2024 F/W 시즌 대비 스니커즈 비율이 11% 증가한 것은 클럽 드레스 코드의 경계가 확장되고 있음을 시사한다. 그러나 플립플롭, 샌들, 작업화는 여전히 제한 리스트에 포함된다.</p>
 
-        <h3>스타일링 전략: 에디토리얼 가이드</h3>
-        <p>전문가의 시각에서, 가양 클럽 룩북은 세 가지 레이어 구조를 권장한다. <strong>베이스 레이어</strong>는 피부에 닿는 소재 (면, 실크, 모달)로 선택하고, <strong>미들 레이어</strong>는 구조적인 아이템 (블레이저, 크롭 재킷, 베스트), <strong>아우터 레이어</strong>는 롱 코트 또는 트렌치 코트로 마무리한다. 2025 S/S 시즌에는 미들 레이어를 생략하고 베이스 위에 아우터를 매치하는 단순화된 실루엣이 주목받았다.</p>
+ <h3>스타일링 전략: 에디토리얼 가이드</h3>
+ <p>전문가의 시각에서, 가양 클럽 룩북은 세 가지 레이어 구조를 권장한다. <strong>베이스 레이어</strong>는 피부에 닿는 소재 (면, 실크, 모달)로 선택하고, <strong>미들 레이어</strong>는 구조적인 아이템 (블레이저, 크롭 재킷, 베스트), <strong>아우터 레이어</strong>는 롱 코트 또는 트렌치 코트로 마무리한다. 2025 S/S 시즌에는 미들 레이어를 생략하고 베이스 위에 아우터를 매치하는 단순화된 실루엣이 주목받았다.</p>
 
-        <p>컬러 팔레트는 아이보리, 블랙, 차콜, 버건디, 딥 네이비로 제한된다. 메탈릭 액센트는 은색 또는 칠흑색으로 통일하는 것이 원칙이다. 데이터에 따르면, 이러한 팔레트를 준수한 게스트의 87%가 클럽 내에서 긍정적인 피드백(추가 입장 혜택, 룸 업그레이드)을 경험했다.</p>
+ <p>컬러 팔레트는 아이보리, 블랙, 차콜, 버건디, 딥 네이비로 제한된다. 메탈릭 액센트는 은색 또는 칠흑색으로 통일하는 것이 원칙이다. 데이터에 따르면, 이러한 팔레트를 준수한 게스트의 87%가 클럽 내에서 긍정적인 피드백(추가 입장 혜택, 룸 업그레이드)을 경험했다.</p>
 
-        <h2>드레스 코드 위반 사례와 교훈</h2>
-        <p>연구 기간 동안 7건의 드레스 코드 위반이 기록되었다. 주요 원인은 과도한 캐주얼 아이템(후드티, 조거팬츠)과 클럽의 색조 규정(네온 컬러) 무시였다. 특히, 3월 둘째 주에는 한 게스트가 그래픽 티셔츠와 레깅스 조합으로 입장이 거절되었는데, 이는 룩북의 기본 원칙 — ‘최소한의 격식’ —을 충족하지 못했기 때문이다.</p>
+ <h2>드레스 코드 위반 사례와 교훈</h2>
+ <p>연구 기간 동안 7건의 드레스 코드 위반이 기록되었다. 주요 원인은 과도한 캐주얼 아이템(후드티, 조거팬츠)과 클럽의 색조 규정(네온 컬러) 무시였다. 특히, 3월 둘째 주에는 한 게스트가 그래픽 티셔츠와 레깅스 조합으로 입장이 거절되었는데, 이는 룩북의 기본 원칙 — ‘최소한의 격식’ —을 충족하지 못했기 때문이다.</p>
 
-        <p>가양 클럽 룩북은 단순한 복장 제한이 아니다. 그것은 공간의 분위기와 상호 존중을 위한 암묵적 계약이다. 2025 S/S 에디토리얼은 이러한 계약을 데이터와 스타일로 풀어낸 기록이다. 다음 시즌 업데이트는 2025년 9월, F/W 컬렉션과 함께 공개될 예정이다.</p>
+ <p>가양 클럽 룩북은 단순한 복장 제한이 아니다. 그것은 공간의 분위기와 상호 존중을 위한 암묵적 계약이다. 2025 S/S 에디토리얼은 이러한 계약을 데이터와 스타일로 풀어낸 기록이다. 다음 시즌 업데이트는 2025년 9월, F/W 컬렉션과 함께 공개될 예정이다.</p>
 
-        <div class="footer-note">
-            <p>에디토리얼 노트: 본 블로그는 가양 클럽 룩북의 공식 아카이브를 기반으로 작성되었습니다. 모든 데이터는 2025년 1분기 리서치 결과를 반영하며, 인용 시 출처를 명시하시기 바랍니다.</p>
-            <p>— 가양 클럽 룩북 에디토리얼 팀</p>
-        </div>
-    </article>
+ <div class="footer-note">
+ <p>에디토리얼 노트: 본 블로그는 가양 클럽 룩북의 공식 아카이브를 기반으로 작성되었습니다. 모든 데이터는 2025년 1분기 리서치 결과를 반영하며, 인용 시 출처를 명시하시기 바랍니다.</p>
+ <p>— 가양 클럽 룩북 에디토리얼 팀</p>
+ </div>
+ </article>
 </main>
 
 <script>
-    // 간단한 모바일 네비게이션 토글 (패턴 유지)
-    document.querySelector('.hamburger-menu')?.addEventListener('click', function(e) {
-        const nav = document.querySelector('.nav-links');
-        if (nav) nav.classList.toggle('active');
-    });
+ // 간단한 모바일 네비게이션 토글 (패턴 유지)
+ document.querySelector('.hamburger-menu')?.addEventListener('click', function(e) {
+ const nav = document.querySelector('.nav-links');
+ if (nav) nav.classList.toggle('active');
+ });
 </script>
 </body>
 </html>
